@@ -11,12 +11,16 @@ TODO:
 - Add demonstration code under `if __name__ == "__main__":`
 """
 
-def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
-    pass
+shopping_list = []
 
+while True:
+    item = input("Enter an item(or DONE to finish): ")
 
-if __name__ == "__main__":
-    main()
+    if item.upper() == "DONE":
+        break
+    shopping_list.append(item)
+
+print("\nShopping list:")
+for i in range(len(shopping_list)):
+    print(i + !, "-", shopping_list[i])
+
