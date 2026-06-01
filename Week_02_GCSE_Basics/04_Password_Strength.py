@@ -14,12 +14,29 @@ TODO:
 - Add demonstration code under `if __name__ == "__main__":`
 """
 
-def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
-    pass
+passsword = input("Enter a password: ")
+score = 0
 
+if len(password) >= 8:
+    score += 1
 
-if __name__ == "__main__":
-    main()
+for char in password:
+    if char.isdigit():
+        score += 1
+        break
+
+if password.lower() != password and password.upper() != password:
+    score += 1
+special = "!@%$#*^"
+for char in password:
+    if char in special:
+        score += 1
+        break
+
+if score <= 1:
+    print("Weak")
+elif score <= 3:
+    print("Medium")
+else:
+    print("Strong")
+
