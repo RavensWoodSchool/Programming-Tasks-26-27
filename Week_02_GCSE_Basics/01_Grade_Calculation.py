@@ -14,12 +14,15 @@ TODO:
 - Add demonstration code under `if __name__ == "__main__":`
 """
 
-def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
-    pass
+def get_grade(score):
+    if score >= 80 and score <= 100:
+        return "A"
+    elif score >= 60:
+        return "B"
+    elif score >= 40:
+        return "C"
+    else:
+        return "D"
 
+score = float(input("Enter percentage: "))
 
-if __name__ == "__main__":
-    main()
