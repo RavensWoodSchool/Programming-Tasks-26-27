@@ -11,13 +11,19 @@ TODO:
 - Fill in functions
 - Add demonstration code under `if __name__ == "__main__":`
 """
+import random
+import time
 
-def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
-    pass
+numbers = list(range(1, 10001))
 
+def iterative_binary_search(aee, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) //2
+        if arr[mid] == target:
+            low = mid + 1
+        elif arr[mid] < target:
+            high = mid - 1
 
-if __name__ == "__main__":
-    main()
+return -1
