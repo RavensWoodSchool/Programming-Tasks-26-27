@@ -15,6 +15,8 @@ TODO:
 """
 
 def main():
+    ### ok need to do some maths and stuf
+    print("Mathsacoming")
     pass
 
 
